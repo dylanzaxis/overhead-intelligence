@@ -11,10 +11,11 @@ import AboutTwo from "../items/AboutTwo";
 import CounterOne from "../items/CounterOne";
 import Testimonial from "../items/Testimonial";
 import BrandTwo from "../items/BrandTwo";
+import DroneCover from "../../assets/images/service/drone.jpg";
 
 videoTagString({
-  src: "/assets/images/service/video.mp4",
-  poster: "/assets/images/bg/bg-image-24.jpg",
+  src: main_video,
+  poster: DroneCover,
 });
 
 function App() {
@@ -79,8 +80,8 @@ function App() {
                 muted={`${true}`}
                 playsInline={`${true}`}
                 loop={`${true}`}
-                src={`${"../../assets/images/service/video.mp4"}`}
-                poster={`${"/assets/images/bg/bg-image-24.jpg"}`}
+                src={main_video}
+                poster={DroneCover}
                 className="video_tag"
               />
             </div>
