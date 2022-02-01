@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FiX, FiMenu } from "react-icons/fi";
+import logo_light from "../../assets/images/logo/logo-light.png";
+import logo_dark from "../../assets/images/logo/logo-dark.png";
+import logo_symbol_dark from "../../assets/images/logo/logo-symbol-dark.png";
+import logo_symbol_light from "../../assets/images/logo/logo-symbol-light.png";
+import the_logo from "../../assets/images/logo/logo.png";
 
 class Header extends Component {
   constructor(props) {
@@ -35,29 +40,15 @@ class Header extends Component {
     const { logo, color = "default-color" } = this.props;
     let logoUrl;
     if (logo === "light") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
-      );
+      logoUrl = logo_light;
     } else if (logo === "dark") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
-      );
+      logoUrl = logo_dark;
     } else if (logo === "symbol-dark") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-dark.png"
-          alt="Digital Agency"
-        />
-      );
+      logoUrl = logo_symbol_dark;
     } else if (logo === "symbol-light") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-light.png"
-          alt="Digital Agency"
-        />
-      );
+      logoUrl = logo_symbol_light;
     } else {
-      logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
+      logoUrl = the_logo;
     }
 
     return (
@@ -67,7 +58,9 @@ class Header extends Component {
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">
-              <a href="/">{logoUrl}</a>
+              <a href="/">
+                <img src={logoUrl} alt="Drone Agency" />
+              </a>
             </div>
           </div>
           <div className="header-right">

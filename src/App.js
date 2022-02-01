@@ -9,9 +9,9 @@ function App() {
   return (
     <Fragment>
       <Routes>
-        <Route exact path={`/`} component={Home} />
+        <Route exact path={`/`} element={<Home />} />
 
-        <Route exact path={`/contact`} component={Contact} />
+        <Route exact path={`/contact`} component={<Contact />} />
       </Routes>
       <Footer />
     </Fragment>
