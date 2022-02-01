@@ -5,6 +5,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
 } from "react-icons/fa";
+import footer_img from "../../assets/images/logo/logo-light.png";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
@@ -22,10 +23,7 @@ const Footer = () => {
             <div className="inner">
               <div className="logo text-center text-sm-left mb_sm--20">
                 <a href="/home-one">
-                  <img
-                    src="/assets/images/logo/logo-light.png"
-                    alt="Logo images"
-                  />
+                  <img src={footer_img} alt="Logo images" />
                 </a>
               </div>
             </div>
