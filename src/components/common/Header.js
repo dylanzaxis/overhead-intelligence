@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FiX, FiMenu } from "react-icons/fi";
+import logo from "../../assets/images/logo/logo.png";
 
 class Header extends Component {
   constructor(props) {
