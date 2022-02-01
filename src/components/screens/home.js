@@ -6,7 +6,7 @@ import ModalVideo from "react-modal-video";
 import service_image from "../../assets/images/blog/bl-big-02.jpg";
 import main_video from "../../assets/images/service/video.mp4";
 import Portfolio from "../items/Portfolio";
-import ServiceTwo from "../items/Portfolio";
+import ServiceTwo from "../items/ServiceTwo";
 import AboutTwo from "../items/Portfolio";
 import CounterOne from "../items/Portfolio";
 import Testimonial from "../items/Portfolio";
