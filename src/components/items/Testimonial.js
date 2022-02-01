@@ -1,9 +1,33 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import worker from "../../assets/images/client/testimonial-1.jpg";
+import worker_1 from "../../assets/images/client/eric.png";
+import worker_2 from "../../assets/images/client/sam.png";
+import worker_3 from "../../assets/images/client/juan.png";
+import worker_4 from "../../assets/images/client/owner.png";
 class Testimonial extends Component {
   render() {
-    let items = [0, 1, 2, 3, 4, 5, 6];
+    let items = [
+      {
+        name: "Eric Cao",
+        image: worker_1,
+        position: "Software Development",
+      },
+      {
+        name: "Sam Davis",
+        image: worker_2,
+        position: "Hardware Design Engineer",
+      },
+      {
+        name: "Juan Torres",
+        image: worker_3,
+        position: "Client Support Specialist",
+      },
+      {
+        name: "Roger O'Neill",
+        image: worker_4,
+        position: "Founder",
+      },
+    ];
 
     return (
       <React.Fragment>
@@ -12,18 +36,18 @@ class Testimonial extends Component {
             <Tabs>
               <div className="row align-items-center">
                 <div className="col-lg-6">
-                  {[0, 1, 2, 3, 4, 5, 6, 7].map((item) => (
+                  {items.map((item) => (
                     <TabPanel key={item}>
                       <div className="rn-testimonial-content text-left">
                         <div className="inner">
                           <p>
                             I love this career because it is a career that I
-                            love {item}
+                            love
                           </p>
                         </div>
                         <div className="author-info">
                           <h6>
-                            <span>Thomas Frey </span> - Drone Operator
+                            <span>{item.name} </span> - {item.position}
                           </h6>
                         </div>
                       </div>
@@ -36,7 +60,7 @@ class Testimonial extends Component {
                       <Tab>
                         <div className="testimonial-thumbnai">
                           <div className="thumb">
-                            <img src={worker} alt="Worker Images" />
+                            <img src={item.image} alt="Worker Images" />
                           </div>
                         </div>
                       </Tab>
