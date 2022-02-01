@@ -2,27 +2,18 @@ import React, { Component, Fragment } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Footer from "./components/items/Footer";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/screens/home";
+import Contact from "./components/screens/home";
 function App() {
   return (
     <Fragment>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <Footer />
-      </div>
+      <Routes>
+        <Route exact path={`/`} component={Home} />
+
+        <Route exact path={`/contact`} component={Contact} />
+      </Routes>
+      <Footer />
     </Fragment>
   );
 }
