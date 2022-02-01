@@ -7,10 +7,10 @@ import service_image from "../../assets/images/blog/bl-big-02.jpg";
 import main_video from "../../assets/images/service/video.mp4";
 import Portfolio from "../items/Portfolio";
 import ServiceTwo from "../items/ServiceTwo";
-import AboutTwo from "../items/Portfolio";
-import CounterOne from "../items/Portfolio";
-import Testimonial from "../items/Portfolio";
-import BrandTwo from "../items/Portfolio";
+import AboutTwo from "../items/AboutTwo";
+import CounterOne from "../items/CounterOne";
+import Testimonial from "../items/Testimonial";
+import BrandTwo from "../items/BrandTwo";
 
 videoTagString({
   src: "/assets/images/service/video.mp4",
