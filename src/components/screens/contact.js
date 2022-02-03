@@ -1,8 +1,14 @@
 import React, { Fragment } from "react";
+import Header from "../items/Header";
 
 export default function Contact() {
   return (
     <Fragment>
+      <Header
+        headertransparent="header--transparent"
+        colorblack="color--black"
+        logoname="logo.png"
+      />
       {/* Start Breadcrump Area */}
       <div
         className="rn-page-title-area pt--120 pb--190 bg_image bg_image--15"
