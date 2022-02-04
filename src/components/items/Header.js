@@ -65,20 +65,15 @@ class Header extends Component {
           </div>
           <div className="header-right">
             <nav className="mainmenunav d-lg-block">
-              <ul className="mainmenu">
+              {/* <ul className="mainmenu">
                 <li>
                   <Link to="/">Home</Link>
                 </li>
-                {/* use this header */}
-
-                {/* <li>
-                  <Link to="/about">About</Link>
-                </li> */}
 
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
-              </ul>
+              </ul> */}
             </nav>
           </div>
         </div>
